@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "test",
+  "version": "1.0",
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast.",
+
+  "icons": {
+    "32": "icons/ame.jpg"
+  },
+
+  "permissions": [
+    "tabs",
+    "notifications"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/ame.jpg",
+    "default_title": "Wordy",
+    "default_popup": "http://localhost:80/wordy/popup/inputWord.html"
+  }
+
+
+}

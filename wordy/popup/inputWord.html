@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<body>
+		<div id="popup-content">
+			<?php
+			       if(!isset($_COOKIE['userid'])) echo "<a href='login.html'>Login</a> or <a href='register.html'>Register</a> to save words and practice.";
+			?>
+			<p id = "text"> Word
+			<input type="text" id = "word">
+			<button id="crawl"> Meaning </button>
+			<?php
+			if(isset($_COOKIE['userid'])) echo "<button id='save'> Save </button>";
+			?>
+			<button id="clear"> Clear </button> </p>
+			<p id = "meaning"></p>
+			<?php
+				if(isset($_COOKIE['userid']))
+					echo "
+						<a id='test' href = 'test.html'> Take a test </a> | 
+						<a id='words' href='words.html'> Show my words </a> | 
+						<a id='logout' href='logout.html'> Logout </button>
+					";
+			?>
+
+		</div>
+		<script src = "inputWord.js"> </script>
+	</body>
+
+</html>
