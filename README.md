@@ -28,3 +28,4 @@ Go to `about:debugging', click on 'Load Temporary Add-on' and load the manifest.
 
 Voila!
 
+![alt text](https://github.com/kfoozminus/Wordy/blob/master/Screenshot.png)
