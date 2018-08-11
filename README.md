@@ -1,4 +1,4 @@
-# Wordy
+# Wordy (Firefox Extension)
 
 ## Local Testing Documentation
 
@@ -24,7 +24,7 @@ chmod 755 *.py
 ```
 
 ### Run
-Go to `about:debugging', click on 'Load Temporary Add-on' and load the manifest.json file.
+Go to `about:debugging' in firefox, click on 'Load Temporary Add-on' and load the manifest.json file.
 
 Voila!
 
